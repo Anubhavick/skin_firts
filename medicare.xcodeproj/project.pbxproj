@@ -89,6 +89,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		4772C97B2E19094F00A1B488 /* Enums */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		47B331AA2E18E79700B44594 /* medicare */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = medicare;
@@ -221,6 +226,7 @@
 		47B331E22E18EDEF00B44594 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				4772C97B2E19094F00A1B488 /* Enums */,
 				47B331E42E18EE1300B44594 /* Appointment.swift */,
 				47B331E32E18EDF900B44594 /* Doctor.swift */,
 			);
@@ -243,6 +249,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				4772C97B2E19094F00A1B488 /* Enums */,
 				47B331AA2E18E79700B44594 /* medicare */,
 			);
 			name = medicare;
