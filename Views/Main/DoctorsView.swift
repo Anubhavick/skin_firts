@@ -1,24 +1,17 @@
 import SwiftUI
 
 struct DoctorsView: View {
-    // @State allows us to modify this data, e.g., toggling a favorite
-    @State private var doctors: [Doctor] = [
-        Doctor(name: "Dr. Olivia Turner, M.D.", specialty: "Dermatologist", imageName: "doctor1", rating: 4.9, isFavorite: true),
-        Doctor(name: "Dr. Alexander Brandt, Ph.D.", specialty: "General Practitioner", imageName: "doctor2", rating: 4.8, isFavorite: false),
-        Doctor(name: "Dr. Michael Davisson, M.D.", specialty: "Cardiologist", imageName: "doctor3", rating: 4.7, isFavorite: false),
-        Doctor(name: "Dr. Sophia Martinez, Ph.D.", specialty: "Pediatrician", imageName: "doctor1", rating: 4.9, isFavorite: true),
-        Doctor(name: "Dr. John Doe", specialty: "Neurologist", imageName: "doctor2", rating: 4.6, isFavorite: false)
-    ]
-    
-    @State private var searchText = ""
+    // @StateObject will create and keep alive a single instance of our ViewModel
+    // for the entire lifecycle of this view.
+    @StateObject private var viewModel = DoctorsViewModel()
 
     var body: some View {
         NavigationStack {
             VStack {
-                // Search Bar
+                // The search bar now binds to the viewModel's searchText property.
                 HStack {
                     Image(systemName: "magnifyingglass")
-                    TextField("Search doctor, services...", text: $searchText)
+                    TextField("Search doctor, services...", text: $viewModel.searchText)
                 }
                 .padding()
                 .background(Color.gray.opacity(0.1))
@@ -28,13 +21,16 @@ struct DoctorsView: View {
                 // The list of doctors
                 ScrollView {
                     LazyVStack(spacing: 16) {
-                        // We use $doctor to create a binding for DoctorRowView
-                        ForEach($doctors) { $doctor in
-                            // MODIFIED PART: The destination is now the DoctorDetailView
-                            NavigationLink(destination: DoctorDetailView(doctor: $doctor)) {
-                                DoctorRowView(doctor: $doctor)
+                        // We loop over the 'filteredDoctors' from the ViewModel.
+                        // We also need to get the index to create a binding.
+                        ForEach(viewModel.filteredDoctors.indices, id: \.self) { index in
+                            // This creates a binding to the specific doctor in the ViewModel's array.
+                            let doctorBinding = $viewModel.doctors[index]
+                            
+                            NavigationLink(destination: DoctorDetailView(doctor: doctorBinding)) {
+                                DoctorRowView(doctor: doctorBinding)
                             }
-                            .buttonStyle(PlainButtonStyle()) // Removes blue tint from text
+                            .buttonStyle(PlainButtonStyle())
                         }
                     }
                     .padding()

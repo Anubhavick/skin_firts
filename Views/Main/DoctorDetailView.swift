@@ -1,11 +1,7 @@
 import SwiftUI
 
 struct DoctorDetailView: View {
-    // We use @Binding so if we tap the heart here,
-    // it updates the doctor on the previous screen too.
     @Binding var doctor: Doctor
-    
-    // We need this to programmatically dismiss the view if needed.
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
@@ -28,10 +24,9 @@ struct DoctorDetailView: View {
                 .padding()
             }
             
-            // --- 5. Bottom Button ---
-            Button(action: {
-                // Action for making an appointment
-            }) {
+            // --- 5. Bottom Button (MODIFIED) ---
+            // This is now a NavigationLink that takes the user to the ScheduleView
+            NavigationLink(destination: ScheduleView(doctor: doctor)) {
                 Text("Make Appointment")
                     .fontWeight(.semibold)
                     .frame(maxWidth: .infinity)
@@ -42,13 +37,11 @@ struct DoctorDetailView: View {
             }
             .padding()
         }
-        // Hides the default back button text ("Doctors") for a cleaner look
         .navigationBarBackButtonHidden(true)
-        // Add our custom navigation bar items
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    dismiss() // Action to go back
+                    dismiss()
                 } label: {
                     Image(systemName: "chevron.left")
                         .foregroundColor(.primary)
@@ -56,7 +49,7 @@ struct DoctorDetailView: View {
             }
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {
-                    doctor.isFavorite.toggle() // Toggle favorite status
+                    doctor.isFavorite.toggle()
                 } label: {
                     Image(systemName: doctor.isFavorite ? "heart.fill" : "heart")
                         .foregroundColor(doctor.isFavorite ? .red : .gray)
@@ -88,7 +81,7 @@ struct DoctorDetailView: View {
                 HStack {
                     Image(systemName: "mappin.circle.fill")
                         .foregroundColor(.blue)
-                    Text("Cardio Path, London") // Placeholder location
+                    Text("Cardio Path, London")
                         .font(.subheadline)
                         .foregroundColor(.gray)
                 }
@@ -130,7 +123,6 @@ struct DoctorDetailView: View {
     }
 }
 
-// A reusable view for the stat boxes (Patients, Experience, Rating)
 struct StatBox: View {
     let value: String
     let label: String
@@ -151,10 +143,7 @@ struct StatBox: View {
     }
 }
 
-
-// MARK: - Preview
 #Preview {
-    // Wrap in NavigationStack to see the toolbar correctly
     NavigationStack {
         DoctorDetailView(doctor: .constant(Doctor(name: "Dr. Olivia Turner, M.D.", specialty: "Dermatologist", imageName: "doctor1", rating: 4.9, isFavorite: true)))
     }

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4772C95E2E18F84E00A1B488 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C95D2E18F84B00A1B488 /* SignUpView.swift */; };
+		4772C9602E18F87600A1B488 /* SetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C95F2E18F87200A1B488 /* SetPasswordView.swift */; };
+		4772C9622E18F9F400A1B488 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9612E18F9F200A1B488 /* ScheduleView.swift */; };
+		4772C9642E18FABF00A1B488 /* AppointmentConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9632E18FABD00A1B488 /* AppointmentConfirmationView.swift */; };
+		4772C9662E18FAD600A1B488 /* PaymentSuccessfulView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9652E18FAD400A1B488 /* PaymentSuccessfulView.swift */; };
+		4772C9682E18FB8700A1B488 /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9672E18FB8600A1B488 /* NotificationsView.swift */; };
+		4772C96A2E18FBA900A1B488 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9692E18FBA700A1B488 /* ChatView.swift */; };
+		4772C96C2E18FC6A00A1B488 /* AllAppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C96B2E18FC6700A1B488 /* AllAppointmentsView.swift */; };
+		4772C96E2E18FCF400A1B488 /* PaymentMethodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C96D2E18FCF200A1B488 /* PaymentMethodsView.swift */; };
+		4772C9702E18FD1400A1B488 /* AddCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C96F2E18FD0F00A1B488 /* AddCardView.swift */; };
+		4772C9722E18FE2A00A1B488 /* DoctorsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9712E18FE2800A1B488 /* DoctorsViewModel.swift */; };
+		4772C9742E19072F00A1B488 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9732E19072B00A1B488 /* SettingsView.swift */; };
+		4772C9762E19076600A1B488 /* NotificationSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9752E19076200A1B488 /* NotificationSettingsView.swift */; };
+		4772C9782E19077F00A1B488 /* PasswordManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9772E19077C00A1B488 /* PasswordManagerView.swift */; };
+		4772C97A2E19079200A1B488 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4772C9792E19079000A1B488 /* PrivacyPolicyView.swift */; };
 		47B331DE2E18ED4C00B44594 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B331DA2E18E96B00B44594 /* SplashScreenView.swift */; };
 		47B331DF2E18ED6200B44594 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B331DC2E18E9A400B44594 /* LoginView.swift */; };
 		47B331E02E18ED6700B44594 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B331DD2E18E9D700B44594 /* HomeView.swift */; };
@@ -40,6 +55,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4772C95D2E18F84B00A1B488 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4772C95F2E18F87200A1B488 /* SetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetPasswordView.swift; sourceTree = "<group>"; };
+		4772C9612E18F9F200A1B488 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		4772C9632E18FABD00A1B488 /* AppointmentConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentConfirmationView.swift; sourceTree = "<group>"; };
+		4772C9652E18FAD400A1B488 /* PaymentSuccessfulView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentSuccessfulView.swift; sourceTree = "<group>"; };
+		4772C9672E18FB8600A1B488 /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		4772C9692E18FBA700A1B488 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4772C96B2E18FC6700A1B488 /* AllAppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAppointmentsView.swift; sourceTree = "<group>"; };
+		4772C96D2E18FCF200A1B488 /* PaymentMethodsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodsView.swift; sourceTree = "<group>"; };
+		4772C96F2E18FD0F00A1B488 /* AddCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardView.swift; sourceTree = "<group>"; };
+		4772C9712E18FE2800A1B488 /* DoctorsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorsViewModel.swift; sourceTree = "<group>"; };
+		4772C9732E19072B00A1B488 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4772C9752E19076200A1B488 /* NotificationSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationSettingsView.swift; sourceTree = "<group>"; };
+		4772C9772E19077C00A1B488 /* PasswordManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerView.swift; sourceTree = "<group>"; };
+		4772C9792E19079000A1B488 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		47B331A82E18E79700B44594 /* medicare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B331B72E18E79800B44594 /* medicareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medicareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47B331C12E18E79800B44594 /* medicareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medicareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +176,8 @@
 		47B331D72E18E8B200B44594 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				4772C95F2E18F87200A1B488 /* SetPasswordView.swift */,
+				4772C95D2E18F84B00A1B488 /* SignUpView.swift */,
 				47B331DC2E18E9A400B44594 /* LoginView.swift */,
 			);
 			path = Authentication;
@@ -154,6 +186,19 @@
 		47B331D82E18E8BE00B44594 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4772C9792E19079000A1B488 /* PrivacyPolicyView.swift */,
+				4772C9772E19077C00A1B488 /* PasswordManagerView.swift */,
+				4772C9752E19076200A1B488 /* NotificationSettingsView.swift */,
+				4772C9732E19072B00A1B488 /* SettingsView.swift */,
+				4772C9712E18FE2800A1B488 /* DoctorsViewModel.swift */,
+				4772C96F2E18FD0F00A1B488 /* AddCardView.swift */,
+				4772C96D2E18FCF200A1B488 /* PaymentMethodsView.swift */,
+				4772C96B2E18FC6700A1B488 /* AllAppointmentsView.swift */,
+				4772C9692E18FBA700A1B488 /* ChatView.swift */,
+				4772C9672E18FB8600A1B488 /* NotificationsView.swift */,
+				4772C9652E18FAD400A1B488 /* PaymentSuccessfulView.swift */,
+				4772C9632E18FABD00A1B488 /* AppointmentConfirmationView.swift */,
+				4772C9612E18F9F200A1B488 /* ScheduleView.swift */,
 				47B331F62E18F27900B44594 /* EditProfileView.swift */,
 				47B331F42E18F26800B44594 /* ProfileView.swift */,
 				47B331F22E18F19700B44594 /* DoctorDetailView.swift */,
@@ -328,17 +373,32 @@
 			files = (
 				47B331F12E18F03D00B44594 /* Appointment.swift in Sources */,
 				47B331E62E18EE4500B44594 /* AppointmentCardView.swift in Sources */,
+				4772C96A2E18FBA900A1B488 /* ChatView.swift in Sources */,
+				4772C9782E19077F00A1B488 /* PasswordManagerView.swift in Sources */,
 				47B331F72E18F27B00B44594 /* EditProfileView.swift in Sources */,
+				4772C9682E18FB8700A1B488 /* NotificationsView.swift in Sources */,
 				47B331F02E18F03800B44594 /* Doctor.swift in Sources */,
 				47B331ED2E18EF2F00B44594 /* DoctorsView.swift in Sources */,
+				4772C9722E18FE2A00A1B488 /* DoctorsViewModel.swift in Sources */,
+				4772C9762E19076600A1B488 /* NotificationSettingsView.swift in Sources */,
 				47B331EA2E18EECE00B44594 /* DoctorRowView.swift in Sources */,
 				47B331F52E18F26900B44594 /* ProfileView.swift in Sources */,
 				47B331EF2E18EFB800B44594 /* MainTabView.swift in Sources */,
+				4772C96C2E18FC6A00A1B488 /* AllAppointmentsView.swift in Sources */,
 				47B331E02E18ED6700B44594 /* HomeView.swift in Sources */,
+				4772C9642E18FABF00A1B488 /* AppointmentConfirmationView.swift in Sources */,
+				4772C9662E18FAD600A1B488 /* PaymentSuccessfulView.swift in Sources */,
+				4772C9602E18F87600A1B488 /* SetPasswordView.swift in Sources */,
+				4772C95E2E18F84E00A1B488 /* SignUpView.swift in Sources */,
 				47B331F32E18F19A00B44594 /* DoctorDetailView.swift in Sources */,
+				4772C9742E19072F00A1B488 /* SettingsView.swift in Sources */,
+				4772C9702E18FD1400A1B488 /* AddCardView.swift in Sources */,
+				4772C97A2E19079200A1B488 /* PrivacyPolicyView.swift in Sources */,
 				47B331DF2E18ED6200B44594 /* LoginView.swift in Sources */,
+				4772C96E2E18FCF400A1B488 /* PaymentMethodsView.swift in Sources */,
 				47B331DE2E18ED4C00B44594 /* SplashScreenView.swift in Sources */,
 				47B331E12E18ED6C00B44594 /* WelcomeView.swift in Sources */,
+				4772C9622E18F9F400A1B488 /* ScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

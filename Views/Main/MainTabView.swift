@@ -10,22 +10,27 @@ struct MainTabView: View {
                     Text("Home")
                 }
             
-            // Tab 2: Doctors (No change)
-            DoctorsView()
-                .tabItem {
-                    Image(systemName: "person.2.fill")
-                    Text("Doctors")
-                }
+            // Tab 2: My Appointments (MODIFIED)
+            // This tab now shows the list of all appointments.
+            NavigationStack {
+                AllAppointmentsView()
+            }
+            .tabItem {
+                Image(systemName: "calendar.badge.clock") // A more fitting icon
+                Text("Appointments")
+            }
             
             // Tab 3: Chat (No change)
-            Text("Chat Screen")
-                .tabItem {
-                    Image(systemName: "message.fill")
-                    Text("Chat")
-                }
+            NavigationStack {
+                ChatView()
+            }
+            .tabItem {
+                Image(systemName: "message.fill")
+                Text("Chat")
+            }
             
-            // Tab 4: Profile (CHANGED)
-            ProfileView() // Use our new ProfileView here
+            // Tab 4: Profile (No change)
+            ProfileView()
                 .tabItem {
                     Image(systemName: "person.fill")
                     Text("Profile")

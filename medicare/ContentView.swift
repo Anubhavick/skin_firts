@@ -23,14 +23,10 @@ struct ContentView: View {
             } else {
                 // After splash, decide whether to show Auth or Home
                 if isLoggedIn {
-                    // *** THIS IS THE IMPORTANT CHANGE ***
-                    // Instead of showing HomeView directly, we show the MainTabView,
-                    // which contains the HomeView and all our other main screens.
+                    // This correctly shows the MainTabView which contains our new HomeView
                     MainTabView()
                 } else {
                     // If not logged in, show the Welcome/Login flow
-                    // We wrap this in a NavigationStack inside WelcomeView to handle navigation
-                    // between Welcome, Login, and SignUp pages.
                     WelcomeView()
                 }
             }

@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct LoginView: View {
@@ -78,11 +77,10 @@ struct LoginView: View {
                 Text("Don't have an account?")
                     .font(.subheadline)
                 
-                // This would navigate to the SignUpView
-                NavigationLink("Sign Up") {
-                    Text("Sign Up Screen (To be built)")
-                }
-                .fontWeight(.bold)
+                // --- MODIFIED PART ---
+                // This now navigates to our new SignUpView
+                NavigationLink("Sign Up", destination: SignUpView())
+                    .fontWeight(.bold)
                 Spacer()
             }
             .padding(.bottom)

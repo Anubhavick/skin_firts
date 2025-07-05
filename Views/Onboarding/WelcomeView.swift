@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct WelcomeView: View {
@@ -43,8 +42,9 @@ struct WelcomeView: View {
                 }
                 .padding(.horizontal)
                 
-                // We'll make a placeholder for the SignUpView
-                NavigationLink(destination: Text("Sign Up Screen (To be built)")) {
+                // --- MODIFIED PART ---
+                // This now navigates to our new SignUpView
+                NavigationLink(destination: SignUpView()) {
                     Text("Sign Up")
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
