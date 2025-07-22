@@ -34,7 +34,7 @@ This project was built to master key iOS technologies and development patterns:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/medicare-app.git
+    git clone https://github.com/Anubhavick/medicare-app.git
     ```
 2.  **Open in Xcode:**
     Open the `medicare.xcodeproj` file.
@@ -45,7 +45,6 @@ This project was built to master key iOS technologies and development patterns:
 
 **[Your Name]**
 
-- **GitHub:** `https://github.com/your-username`
-- **LinkedIn:** `https://linkedin.com/in/your-linkedin-profile`
+- **GitHub:** `https://github.com/Anubhavick`
 
 This project represents a significant step in my journey as an iOS developer. I am passionate about building clean, efficient, and user-friendly mobile applications and am actively seeking opportunities to contribute my skills to a professional team.
