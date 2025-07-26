@@ -30,7 +30,7 @@ This project was built to master key iOS technologies and development patterns:
 - **Asynchronous Programming:**
   - `async/await` and the `.task` modifier were used to simulate fetching data from a network, demonstrating an understanding of modern concurrency in Swift.
 
-## How to Run this 
+## How to Run
 
 1.  **Clone the repository:**
     ```bash
